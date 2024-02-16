@@ -10,9 +10,6 @@
                         <img :src="perro.img">
                     </q-avatar>
                     <q-card-actions horizontal class="justify-around q-px-md">
-                        <router-link :to="{ name: 'updatePerro', params: { id: perro.id } }">
-                            <q-btn flat round color="red" icon="build" />
-                        </router-link>
                         <q-btn @click="borrarPerro(perro.id)" flat round color="warning" icon="delete" />
                     </q-card-actions>
                 </q-card-section>

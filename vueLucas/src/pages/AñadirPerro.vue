@@ -41,7 +41,7 @@ export default defineComponent({
     },
     methods: {
         añadirPerro() {
-            if (this.img != "" && this.raza && this.color != "") {
+            if (this.img != "" && this.raza != "" && this.color != "") {
                 const perroFormData = new FormData();
                 perroFormData.append('img', this.img);
                 perroFormData.append('raza', this.raza);
