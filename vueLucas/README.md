@@ -1,4 +1,4 @@
-# Lucas app (vuelucas)
+# Quasar App (vuelucas)
 
 A Quasar Project
 
