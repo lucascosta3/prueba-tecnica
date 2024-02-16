@@ -1,6 +1,6 @@
 <template>
     <div class="text-h3 flex flex-center">Perros</div>
-    <q-page class="flex flex-center">
+    <q-page v-if="perros.length>0" class="flex flex-center">
         <div v-for="perro in perros" :key="perro.id" class="q-pa-md" style="max-width: 500px;">
             <q-card class="my-card q-gutter-y-md bg-brown-4 chip-border" flat bordered>
                 <div class="text-h6 flex flex-center">{{ perro.raza }}</div>
@@ -14,6 +14,11 @@
                     </q-card-actions>
                 </q-card-section>
             </q-card>
+        </div>
+    </q-page>
+    <q-page v-else class="flex flex-center">
+        <div class="text text-h3">
+            No hay perros añadidos, añade alguno.
         </div>
     </q-page>
 </template>
